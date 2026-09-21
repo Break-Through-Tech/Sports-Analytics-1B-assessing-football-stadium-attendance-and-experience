@@ -1,5 +1,6 @@
 # Environment
 .env
+bttenv/
 
 # Python
 __pycache__/
