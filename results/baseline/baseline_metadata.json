@@ -1,0 +1,71 @@
+{
+  "model": "logistic_regression",
+  "train_seasons": [
+    2023,
+    2024
+  ],
+  "test_seasons": [
+    2025
+  ],
+  "train_games": 1559,
+  "test_games": 806,
+  "feature_columns": [
+    "week",
+    "conferenceGame",
+    "away_is_fcs",
+    "homePregameElo",
+    "elo_diff",
+    "elo_abs_diff",
+    "log_capacity",
+    "latitude",
+    "longitude",
+    "away_travel_km",
+    "home_prior_turnout",
+    "home_turnout_trend",
+    "home_prior_games",
+    "away_draw_lift_prior",
+    "homeConference_ACC",
+    "homeConference_American Athletic",
+    "homeConference_Big 12",
+    "homeConference_Big Ten",
+    "homeConference_Conference USA",
+    "homeConference_FBS Independents",
+    "homeConference_Mid-American",
+    "homeConference_Mountain West",
+    "homeConference_Pac-12",
+    "homeConference_SEC",
+    "homeConference_Sun Belt",
+    "day_type_friday",
+    "day_type_other_day",
+    "day_type_saturday",
+    "kickoff_slot_afternoon",
+    "kickoff_slot_evening",
+    "kickoff_slot_midday",
+    "kickoff_slot_unknown"
+  ],
+  "class_labels": {
+    "0": "low",
+    "1": "medium",
+    "2": "high"
+  },
+  "low_max": 0.7009283779722832,
+  "medium_max": 0.9597728085612314,
+  "model_parameters": {
+    "C": 1.0,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 2000,
+    "multi_class": "auto",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "evaluation_note": "historical features include earlier games within the test season; evaluation represents predictions as the season progresses"
+}
