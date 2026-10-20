@@ -1,0 +1,4 @@
+,pred_low,pred_medium,pred_high
+true_low,0.8992,0.1008,0.0
+true_medium,0.2283,0.6045,0.1672
+true_high,0.035,0.1518,0.8132

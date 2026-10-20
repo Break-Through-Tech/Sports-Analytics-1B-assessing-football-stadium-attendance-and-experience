@@ -1,0 +1,27 @@
+{
+  "model_name": "logreg",
+  "estimator_class": "Pipeline",
+  "trained_at_utc": "2026-10-20T01:05:02+00:00",
+  "fit_seconds": 0.04,
+  "n_train_rows": 1559,
+  "n_features": 32,
+  "test_metrics": {
+    "accuracy": 0.7568,
+    "balanced_accuracy": 0.768,
+    "precision_macro": 0.762,
+    "recall_macro": 0.768,
+    "f1_macro": 0.7612,
+    "roc_auc_ovr": 0.9093
+  },
+  "library_versions": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.6"
+  },
+  "params": {
+    "memory": "None",
+    "steps": "[('scaler', StandardScaler()), ('model', LogisticRegression(max_iter=2000, random_state=42))]",
+    "transform_input": "None",
+    "verbose": "False"
+  }
+}

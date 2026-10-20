@@ -1,0 +1,30 @@
+{
+  "model_name": "stacking_cv",
+  "estimator_class": "StackingClassifier",
+  "trained_at_utc": "2026-10-20T01:05:02+00:00",
+  "fit_seconds": 9.09,
+  "n_train_rows": 1559,
+  "n_features": 32,
+  "test_metrics": {
+    "accuracy": 0.7581,
+    "balanced_accuracy": 0.7723,
+    "precision_macro": 0.7592,
+    "recall_macro": 0.7723,
+    "f1_macro": 0.7602,
+    "roc_auc_ovr": 0.9186
+  },
+  "library_versions": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.6"
+  },
+  "params": {
+    "cv": "2 precomputed season-grouped folds",
+    "estimators": "[('logreg', Pipeline(steps=[('scaler', StandardScaler()),\n                ('model', LogisticRegression(max_iter=2000, random_state=42))])), ('svm', Pipeline(steps=[('scaler', StandardScaler()),\n                ('model',\n                 CalibratedClassifierCV(cv=5, ensemble=False,\n                                        estimator=SVC()))])), ('rf', RandomForestClassifier(n_estimators=300, n_jobs=-1, random_state=42)), ('xgb', XGBClassifier(base_score=None, booster=None, callbacks=None,\n              colsample_bylevel=None, colsample_bynode=None,\n              colsample_bytree=None, device=None, early_stopping_rounds=None,\n              enable_categorical=True, eval_metric='mlogloss',\n              feature_types=None, feature_weights=None, gamma=None,\n              grow_policy=None, importance_type=None,\n              interaction_constraints=None, learning_rate=None, max_bin=None,\n              max_cat_threshold=None, max_cat_to_onehot=None,\n              max_delta_step=None, max_depth=None, max_leaves=None,\n              min_child_weight=None, missing=nan, monotone_constraints=None,\n              multi_strategy=None, n_estimators=None, n_jobs=None, num_class=3, ...))]",
+    "final_estimator": "LogisticRegression(max_iter=2000, random_state=42)",
+    "n_jobs": "-1",
+    "passthrough": "False",
+    "stack_method": "predict_proba",
+    "verbose": "0"
+  }
+}
