@@ -1,0 +1,27 @@
+{
+  "model_name": "svm",
+  "estimator_class": "Pipeline",
+  "trained_at_utc": "2026-10-20T00:37:44+00:00",
+  "fit_seconds": 0.24,
+  "n_train_rows": 1559,
+  "n_features": 32,
+  "test_metrics": {
+    "accuracy": 0.7419,
+    "balanced_accuracy": 0.7541,
+    "precision_macro": 0.7427,
+    "recall_macro": 0.7541,
+    "f1_macro": 0.7458,
+    "roc_auc_ovr": 0.864
+  },
+  "library_versions": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.6"
+  },
+  "params": {
+    "memory": "None",
+    "steps": "[('scaler', StandardScaler()), ('model', CalibratedClassifierCV(cv=5, ensemble=False, estimator=SVC()))]",
+    "transform_input": "None",
+    "verbose": "False"
+  }
+}
