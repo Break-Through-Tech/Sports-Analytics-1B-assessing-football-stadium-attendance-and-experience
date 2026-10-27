@@ -1,0 +1,22 @@
+{
+  "logistic_regression": {
+    "model__C": 0.006026889128682512
+  },
+  "svm_rbf": {
+    "model__estimator__C": 15.702970884055382,
+    "model__estimator__gamma": 0.006251373574521752
+  },
+  "random_forest": {
+    "model__max_depth": 9,
+    "model__max_features": "sqrt",
+    "model__min_samples_leaf": 13
+  },
+  "xgboost": {
+    "model__colsample_bytree": 0.6185801650879991,
+    "model__max_depth": 4,
+    "model__min_child_weight": 7,
+    "model__n_estimators": 120,
+    "model__reg_lambda": 5.054493267725887,
+    "model__subsample": 0.6053059844639466
+  }
+}
