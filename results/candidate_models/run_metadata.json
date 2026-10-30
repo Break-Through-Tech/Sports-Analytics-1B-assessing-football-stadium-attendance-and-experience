@@ -1,0 +1,95 @@
+{
+  "random_state": 42,
+  "selection_rule": "highest grouped-CV macro F1 among tuned individual models and tuned soft voting, fixed before test evaluation",
+  "selection_candidates": [
+    "logistic_regression",
+    "svm_rbf",
+    "random_forest",
+    "xgboost",
+    "soft_voting"
+  ],
+  "selected_model": "random_forest",
+  "selected_high_tier_models": [
+    "random_forest",
+    "xgboost"
+  ],
+  "runner_up": "xgboost",
+  "selection_margin_cv_f1_macro": 0.0038055599838713317,
+  "selected_model_fold_spread_f1_macro": 0.002927423505911797,
+  "selection_is_statistical_tie": false,
+  "cv_folds": [
+    {
+      "fold": 1,
+      "train_seasons": [
+        2024
+      ],
+      "validation_seasons": [
+        2023
+      ],
+      "direction": "backward in time"
+    },
+    {
+      "fold": 2,
+      "train_seasons": [
+        2023
+      ],
+      "validation_seasons": [
+        2024
+      ],
+      "direction": "forward in time"
+    }
+  ],
+  "train_seasons": [
+    2023,
+    2024
+  ],
+  "test_seasons": [
+    2025
+  ],
+  "feature_columns": [
+    "week",
+    "conferenceGame",
+    "away_is_fcs",
+    "homePregameElo",
+    "elo_diff",
+    "elo_abs_diff",
+    "log_capacity",
+    "latitude",
+    "longitude",
+    "away_travel_km",
+    "home_prior_turnout",
+    "home_turnout_trend",
+    "home_prior_games",
+    "away_draw_lift_prior",
+    "homeConference_ACC",
+    "homeConference_American Athletic",
+    "homeConference_Big 12",
+    "homeConference_Big Ten",
+    "homeConference_Conference USA",
+    "homeConference_FBS Independents",
+    "homeConference_Mid-American",
+    "homeConference_Mountain West",
+    "homeConference_Pac-12",
+    "homeConference_SEC",
+    "homeConference_Sun Belt",
+    "day_type_friday",
+    "day_type_other_day",
+    "day_type_saturday",
+    "kickoff_slot_afternoon",
+    "kickoff_slot_evening",
+    "kickoff_slot_midday",
+    "kickoff_slot_unknown"
+  ],
+  "class_labels": {
+    "0": "low",
+    "1": "medium",
+    "2": "high"
+  },
+  "library_versions": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  },
+  "run_time_utc": "2026-10-28T00:24:21.137840+00:00"
+}
