@@ -12,7 +12,7 @@ Predicting whether an FBS college football home game will have **low, medium, or
 | Hiba Belhaj        | [belhaj1h@alma.edu](mailto:belhaj1h@alma.edu)             |              |
 | Ahana Majumdar     | [ahm228@lehigh.edu](mailto:ahm228@lehigh.edu)             |              |
 | Susmita Pasala     | [susmitapasala@gmail.com](mailto:susmitapasala@gmail.com) |              |
-| Donovan Heggs      | [dheggs1@Isu.edu](mailto:dheggs1@Isu.edu)                 |              |
+| Donavan Heggs      | [dheggs1@Isu.edu](mailto:dheggs1@Isu.edu)                 |              |
 
 ---
 
